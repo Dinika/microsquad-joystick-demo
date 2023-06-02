@@ -17,11 +17,13 @@
             <a-asset-item id="joystick" src="joystick/scene.gltf"></a-asset-item>
         </a-assets>
 
+        <a-entity id="rig" position="25 2 0">
+            <a-entity id="camera" camera look-controls>
+                <a-entity light="type: hemisphere; color: #FFF; intensity: 1" position="0 2 0"></a-entity>
 
-        <a-entity camera look-controls>
-            <a-entity light="type: hemisphere; color: #FFF; intensity: 1" position="0 2 0"></a-entity>
-            <a-gltf-model src="#joystick" scale="0.15 0.15 0.15" position="0 0 -4" rotation="90 0 0"></a-gltf-model>
-        </a-entity>
+                <a-gltf-model src="#joystick" scale="0.15 0.15 0.15" position="0 0 -3" rotation="90 0 0"></a-gltf-model>
+            </a-entity>
+          </a-entity>
     </a-scene>
 </body>
 
